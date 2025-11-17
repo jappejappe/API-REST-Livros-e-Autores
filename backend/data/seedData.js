@@ -63,6 +63,7 @@ const seedData = () => {
     isbn: '978-85-422-0041-4'
   });
 
+  // Adicionar times de exemplo
   console.log('✅ Dados iniciais carregados com sucesso!');
   console.log(`📚 ${storageHelpers.getAllBooks().length} livros cadastrados`);
   console.log(`✍️ ${storageHelpers.getAllAuthors().length} autores cadastrados`);

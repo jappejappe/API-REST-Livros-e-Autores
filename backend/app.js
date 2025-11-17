@@ -16,6 +16,10 @@ app.use(express.json());
 app.use('/api/books', require('./routes/books'));
 app.use('/api/authors', require('./routes/authors'));
 
+if (process.env.NODE_ENV !== 'production') {
+  app.use('/api/debug', require('./routes/debug'));
+}
+
 // Basic health check
 app.get('/api/health', (req, res) => {
   res.json({ 
