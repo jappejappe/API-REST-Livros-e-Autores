@@ -82,8 +82,8 @@ O sistema já vem com alguns dados de exemplo (3 autores e 3 livros) para demons
 - `GET /api/books/:id` - Obter livro específico
 - `PUT /api/books/:id` - Atualizar livro existente
 - `DELETE /api/books/:id` - Deletar livro
-#
-# Funcionalidades Implementadas
+
+## Funcionalidades Implementadas
 
 ### 📚 Cadastro de Livros
 - **Título** (obrigatório): Nome do livro
