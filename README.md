@@ -85,7 +85,7 @@ O sistema já vem com alguns dados de exemplo (3 autores e 3 livros) para demons
 #
 # Funcionalidades Implementadas
 
-### 📚 Cadastro de Livros
+### Cadastro de Livros
 - **Título** (obrigatório): Nome do livro
 - **Resumo** (obrigatório): Descrição sobre o livro
 - **Autor** (obrigatório): Seleção de autor cadastrado
