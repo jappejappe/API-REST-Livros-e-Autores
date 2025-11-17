@@ -85,7 +85,7 @@ O sistema já vem com alguns dados de exemplo (3 autores e 3 livros) para demons
 
 ## Funcionalidades Implementadas
 
-### 📚 Cadastro de Livros
+### Cadastro de Livros
 - **Título** (obrigatório): Nome do livro
 - **Resumo** (obrigatório): Descrição sobre o livro
 - **Autor** (obrigatório): Seleção de autor cadastrado
@@ -97,24 +97,24 @@ O sistema já vem com alguns dados de exemplo (3 autores e 3 livros) para demons
 - **Idioma**: Idioma do livro
 - **Editora**: Casa publicadora
 
-### ✍️ Cadastro de Autores
+### Cadastro de Autores
 - **Nome** (obrigatório): Nome completo do autor
 - **Biografia**: Informações sobre o autor
 - **Ano de Nascimento**: Quando o autor nasceu
 - **Nacionalidade**: País de origem
 
 
-### 🔧 Funcionalidades do Sistema
-- ✅ CRUD completo para livros (Criar, Ler, Atualizar, Deletar)
-- ✅ CRUD simples para autores
-- ✅ Validação de dados no backend e frontend
-- ✅ Relacionamento entre livros e autores
-- ✅ Interface responsiva e intuitiva
-- ✅ Tratamento de erros
-- ✅ Dados de exemplo incluídos
-- ✅ Armazenamento em memória (reinicia ao parar o servidor)
+### Funcionalidades do Sistema
+-  CRUD completo para livros (Criar, Ler, Atualizar, Deletar)
+-  CRUD simples para autores
+-  Validação de dados no backend e frontend
+-  Relacionamento entre livros e autores
+-  Interface responsiva e intuitiva
+-  Tratamento de erros
+-  Dados de exemplo incluídos
+-  Armazenamento em memória (reinicia ao parar o servidor)
 
-### 🎯 Diferenciação POST vs PUT
+### Diferenciação POST vs PUT
 - **POST**: Criar novos recursos (livros/autores)
 - **PUT**: Atualizar recursos existentes por ID
 - Validação adequada para cada operação
