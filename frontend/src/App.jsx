@@ -57,14 +57,14 @@ function App() {
     <Router>
       <div className="container">
         <header style={{ marginBottom: '30px', borderBottom: '1px solid #ddd', paddingBottom: '20px' }}>
-          <h1>📚 Inventário de Livros e Autores</h1>
+          <h1>Inventário de Livros e Autores</h1>
           <nav style={{ marginTop: '15px' }}>
             <Link 
               to="/" 
               style={{ 
                 marginRight: '20px', 
                 textDecoration: 'none', 
-                color: currentView === 'books' ? '#007bff' : '#666',
+                color: currentView === 'books' ? '#797979ff' : '#565656ff',
                 fontWeight: currentView === 'books' ? 'bold' : 'normal'
               }}
               onClick={() => {
@@ -79,7 +79,7 @@ function App() {
               to="/authors" 
               style={{ 
                 textDecoration: 'none', 
-                color: currentView === 'authors' ? '#007bff' : '#666',
+                color: currentView === 'authors' ? '#797979ff' : '#565656ff',
                 fontWeight: currentView === 'authors' ? 'bold' : 'normal'
               }}
               onClick={() => {

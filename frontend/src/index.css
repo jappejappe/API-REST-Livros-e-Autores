@@ -29,21 +29,21 @@ body {
 }
 
 .btn-primary {
-  background-color: #007bff;
+  background-color: #80918d;
   color: white;
 }
 
 .btn-primary:hover {
-  background-color: #0056b3;
+  background-color: rgb(119, 129, 126);
 }
 
 .btn-danger {
-  background-color: #dc3545;
+  background-color: #b2b2b2;
   color: white;
 }
 
 .btn-danger:hover {
-  background-color: #c82333;
+  background-color: #959595;
 }
 
 .form-group {
@@ -75,5 +75,5 @@ body {
 .loading {
   text-align: center;
   padding: 20px;
-  color: #666;
+  color: #565656ff;
 }

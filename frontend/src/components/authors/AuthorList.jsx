@@ -59,7 +59,7 @@ const AuthorList = ({ onEdit, onAdd }) => {
   return (
     <div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
-        <h2>Autores ({authors.length})</h2>
+        <h2>Autores</h2>
         <button onClick={onAdd} className="btn btn-primary">
           + Cadastrar Novo Autor
         </button>
@@ -68,7 +68,7 @@ const AuthorList = ({ onEdit, onAdd }) => {
       {authors.length === 0 ? (
         <div style={{ textAlign: 'center', padding: '40px', backgroundColor: 'white', borderRadius: '8px' }}>
           <h3>Nenhum autor cadastrado</h3>
-          <p style={{ color: '#666', marginBottom: '20px' }}>
+          <p style={{ color: '#565656ff', marginBottom: '20px' }}>
             Cadastre autores para poder adicionar livros!
           </p>
           <button onClick={onAdd} className="btn btn-primary">
@@ -95,7 +95,7 @@ const AuthorList = ({ onEdit, onAdd }) => {
                   </h3>
                   
                   {author.biography && (
-                    <div style={{ marginBottom: '12px', color: '#666', lineHeight: '1.4' }}>
+                    <div style={{ marginBottom: '12px', color: '#565656ff', lineHeight: '1.4' }}>
                       {author.biography}
                     </div>
                   )}
@@ -114,7 +114,7 @@ const AuthorList = ({ onEdit, onAdd }) => {
                   <button 
                     onClick={() => onEdit(author)}
                     className="btn"
-                    style={{ backgroundColor: '#28a745', color: 'white', fontSize: '12px', padding: '6px 12px' }}
+                    style={{ backgroundColor: '#716669', color: 'white', fontSize: '12px', padding: '6px 12px' }}
                   >
                     Editar
                   </button>

@@ -40,7 +40,7 @@ const BookList = ({ onEdit, onAdd }) => {
     const qualityMap = {
       '1': '⭐ Ruim',
       '2': '⭐⭐ Regular',
-      '3': '⭐⭐⭐ Bom',
+      '3': '⭐⭐⭐ Decente',
       '4': '⭐⭐⭐⭐ Muito Bom',
       '5': '⭐⭐⭐⭐⭐ Excelente'
     };
@@ -65,7 +65,7 @@ const BookList = ({ onEdit, onAdd }) => {
   return (
     <div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
-        <h2>Meus Livros ({books.length})</h2>
+        <h2>Meus Livros</h2>
         <button onClick={onAdd} className="btn btn-primary">
           + Cadastrar Novo Livro
         </button>
@@ -74,7 +74,7 @@ const BookList = ({ onEdit, onAdd }) => {
       {books.length === 0 ? (
         <div style={{ textAlign: 'center', padding: '40px', backgroundColor: 'white', borderRadius: '8px' }}>
           <h3>Nenhum livro cadastrado</h3>
-          <p style={{ color: '#666', marginBottom: '20px' }}>
+          <p style={{ color: '#000000ff', marginBottom: '20px' }}>
             Comece cadastrando seu primeiro livro!
           </p>
           <button onClick={onAdd} className="btn btn-primary">
@@ -104,7 +104,7 @@ const BookList = ({ onEdit, onAdd }) => {
                     <strong>Autor:</strong> {book.author ? book.author.name : 'Autor não encontrado'}
                   </div>
 
-                  <div style={{ marginBottom: '12px', color: '#666', lineHeight: '1.4' }}>
+                  <div style={{ marginBottom: '12px', color: '#000000ff', lineHeight: '1.4' }}>
                     <strong>Resumo:</strong> {book.summary}
                   </div>
 
@@ -137,7 +137,7 @@ const BookList = ({ onEdit, onAdd }) => {
                   <button 
                     onClick={() => onEdit(book)}
                     className="btn"
-                    style={{ backgroundColor: '#28a745', color: 'white', fontSize: '12px', padding: '6px 12px' }}
+                    style={{ backgroundColor: '#716669', color: 'white', fontSize: '12px', padding: '6px 12px' }}
                   >
                     Editar
                   </button>
