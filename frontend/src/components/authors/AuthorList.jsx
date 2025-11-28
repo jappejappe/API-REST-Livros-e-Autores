@@ -58,10 +58,29 @@ const AuthorList = ({ onEdit, onAdd }) => {
 
   return (
     <div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
-        <h2>Autores</h2>
+      <div style={{ 
+        display: 'flex', 
+        justifyContent: 'space-between', 
+        alignItems: 'center', 
+        marginBottom: '32px',
+        background: 'rgba(255, 255, 255, 0.95)',
+        backdropFilter: 'blur(10px)',
+        padding: '24px',
+        borderRadius: '16px',
+        boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1)'
+      }}>
+        <h2 style={{ 
+          fontSize: '28px',
+          fontWeight: '700',
+          background: 'black',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          margin: 0
+        }}>
+          Autores
+        </h2>
         <button onClick={onAdd} className="btn btn-primary">
-          + Cadastrar Novo Autor
+          Cadastrar Novo Livro
         </button>
       </div>
 

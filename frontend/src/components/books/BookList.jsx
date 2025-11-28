@@ -64,17 +64,45 @@ const BookList = ({ onEdit, onAdd }) => {
 
   return (
     <div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
-        <h2>Meus Livros</h2>
+      <div style={{ 
+        display: 'flex', 
+        justifyContent: 'space-between', 
+        alignItems: 'center', 
+        marginBottom: '32px',
+        background: 'rgba(255, 255, 255, 0.95)',
+        backdropFilter: 'blur(10px)',
+        padding: '24px',
+        borderRadius: '16px',
+        boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1)'
+      }}>
+        <h2 style={{ 
+          fontSize: '28px',
+          fontWeight: '700',
+          background: 'black',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          margin: 0
+        }}>
+          Meus Livros
+        </h2>
         <button onClick={onAdd} className="btn btn-primary">
-          + Cadastrar Novo Livro
+          Cadastrar Novo Livro
         </button>
       </div>
 
       {books.length === 0 ? (
-        <div style={{ textAlign: 'center', padding: '40px', backgroundColor: 'white', borderRadius: '8px' }}>
-          <h3>Nenhum livro cadastrado</h3>
-          <p style={{ color: '#000000ff', marginBottom: '20px' }}>
+        <div style={{ 
+          textAlign: 'center', 
+          padding: '60px 40px', 
+          background: 'rgba(255, 255, 255, 0.95)',
+          backdropFilter: 'blur(10px)',
+          borderRadius: '16px',
+          boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1)'
+        }}>
+          <h3 style={{ fontSize: '24px', color: '#2d3748', marginBottom: '12px' }}>
+            Nenhum livro cadastrado
+          </h3>
+          <p style={{ color: '#718096', marginBottom: '24px', fontSize: '16px' }}>
             Comece cadastrando seu primeiro livro!
           </p>
           <button onClick={onAdd} className="btn btn-primary">
@@ -82,16 +110,26 @@ const BookList = ({ onEdit, onAdd }) => {
           </button>
         </div>
       ) : (
-        <div style={{ display: 'grid', gap: '16px' }}>
+        <div style={{ display: 'grid', gap: '20px' }}>
           {books.map(book => (
             <div 
               key={book.id} 
               style={{ 
-                backgroundColor: 'white', 
-                padding: '20px', 
-                borderRadius: '8px', 
-                boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-                border: '1px solid #e0e0e0'
+                background: 'rgba(255, 255, 255, 0.95)',
+                backdropFilter: 'blur(10px)',
+                padding: '28px', 
+                borderRadius: '16px', 
+                boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1)',
+                border: '1px solid rgba(255, 255, 255, 0.3)',
+                transition: 'all 0.3s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-4px)';
+                e.currentTarget.style.boxShadow = '0 12px 40px rgba(0, 0, 0, 0.15)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.1)';
               }}
             >
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
